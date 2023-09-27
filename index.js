@@ -9,7 +9,7 @@ const cors = require("cors");
 const webpush = require("web-push");
 
 app.use(bodyParser.json());
-const a = webpush.generateVAPIDKeys();
+// const a = webpush.generateVAPIDKeys();
 console.log(a);
 
 const apiKeys = {
