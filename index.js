@@ -9,12 +9,13 @@ const cors = require("cors");
 const webpush = require("web-push");
 
 app.use(bodyParser.json());
+const a = webpush.generateVAPIDKeys();
+console.log(a);
 
-// app.use(cors("https://perupalembakery.onrender.com"));
 const apiKeys = {
   publicKey:
-    "BB0IrPkMRgdZYW0Y120IhjA21jYbSTIybVO8xp0dxdCS-Qgc34dGP9571wwI4wyK7UkRMj3TSjEt2H1NjCN0x7E",
-  privateKey: "ugMp2KfAs_LOy-fH70bz3rHkLbLSZEu2OaaUOf_My7s",
+    "BOWER7rRO3_KRqiV4t5EYrpEckxZu13SjdOAOuNd0CHEQsXTCeEBKiNVyV_eT3yQday9xxa-darbcBJyotbmRno",
+  privateKey: "9Z5BklMxek4lT_Js3Jy0piuyoP26p3nlxNjVKknR5gg",
 };
 webpush.setVapidDetails(
   "mailto:rith8596@gmail.com",
